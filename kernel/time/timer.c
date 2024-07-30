@@ -101,8 +101,7 @@ EXPORT_SYMBOL(jiffies_64);
  * The currently chosen array constants values are a good compromise between
  * array size and granularity.
  *
- * This results in the following granularity and range levels:
- *
+ * This results in the following granularity and range levels
  * HZ 1000 steps
  * Level Offset  Granularity            Range
  *  0      0         1 ms                0 ms -         63 ms
@@ -149,8 +148,7 @@ EXPORT_SYMBOL(jiffies_64);
  *  5	 320     327680 ms (~5m)   2621440 ms -   20971510 ms (~43m - ~5h)
  *  6	 384    2621440 ms (~43m) 20971520 ms -  167772150 ms (~5h - ~1d)
  *  7	 448   20971520 ms (~5h) 167772160 ms - 1342177270 ms (~1d - ~15d)
- */
-
+ * 
 /* Clock divisor for the next level */
 #define LVL_CLK_SHIFT	3
 #define LVL_CLK_DIV	(1UL << LVL_CLK_SHIFT)
